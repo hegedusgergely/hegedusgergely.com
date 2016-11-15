@@ -57,9 +57,9 @@
             <div class="container">
                 <div class="row">
                     <p>
-                        You can find me on <a class="hvr-underline-from-left" href="https://twitter.com/hegedusgergely" target="_blank">Twitter</a> and
-                        <a class="hvr-underline-from-left" href="https://www.instagram.com/hegedus.geri/" target="_blank">Instagram</a> or
-                        <a class="hvr-underline-from-left" href="mailto:mail@hegedusgergely.com?Subject=Hey%20There" target="_top">You can E-mail me.</a>
+                        You can find me on <a href="https://twitter.com/hegedusgergely" target="_blank">Twitter</a> and
+                        <a href="https://www.instagram.com/hegedus.geri/" target="_blank">Instagram</a> or
+                        <a href="mailto:mail@hegedusgergely.com?Subject=Hey%20There" target="_top">You can E-mail me.</a>
                     </p>
                 </div>
             </div>
