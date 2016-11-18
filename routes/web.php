@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('index');
 });
+Route::get('kamatos', 'kamatosController@index');
+Route::post('kamatos', 'kamatosController@calculate');
+Route::get('calculate', 'kamatosController@calculate');

@@ -1,0 +1,97 @@
+/*
+ * Lets import Normalize, and Skeleton CSS framework.
+ */
+@import '_normalize';
+@import '_skeleton';
+
+/*
+ * Color variables
+ */
+$text-color: #7E57C2;
+$selection-color: lighten( $text-color, 20% );
+$background-color: lighten( $text-color, 40% );
+
+/*
+ * Font variables
+ */
+$title: 'Playfair Display', serif;
+$body: 'Raleway', sans-serif;
+
+
+body
+{
+    background-color: $background-color;
+
+    header
+    {
+        padding-top: 10vw;
+
+        h1
+        {
+            color: $text-color;
+            font-family: $title;
+            font-size: 8rem;
+            font-weight: 700;
+            font-style: italic;
+            margin: 0;
+        }
+
+        h1::selection
+        {
+            color: $selection-color;
+        }
+    }
+
+    section
+    {
+        padding-top: 5vh;
+
+        p,a,a:hover
+        {
+            color: $text-color;
+            font-family: $body;
+            font-size: 2rem;
+            font-weight: 300;
+            letter-spacing: 0.2rem;
+            margin: 0;
+        }
+
+        /*
+         * Prevents <br> to be selectable
+         */
+        br::selection
+        {
+            -webkit-user-select: none;  /* Chrome all / Safari all */
+            -moz-user-select: none;     /* Firefox all */
+            -ms-user-select: none;      /* IE 10+ */
+            user-select: none;          /* Likely future */
+        }
+
+        p::selection,a::selection
+        {
+            color: $selection-color;
+        }
+
+        a
+        {
+            text-decoration: none;
+            font-style: italic;
+        }
+
+        /*
+         * Link hover effect
+         */
+        a:hover
+        {
+            animation-name: link-hover;
+            animation-duration: 1s;
+        }
+
+        @keyframes link-hover {
+            0%   {background-color: red;}
+            25%  {background-color: yellow;}
+            50%  {background-color: blue;}
+            100% {background-color: green;}
+        }
+    }
+}
